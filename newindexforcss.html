@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My name is Stephanie</title>
+    <link rel="stylesheet" href="./Layout2style.css">
+</head>
+<body>
+    <div class="container" style="border: 4px solid green; padding: 24px 24px 0 24px;">
+        <div class="title" style="color: green;">Hello, My name is Stephanie. Welcome to my page! (Click the Pics!)</div>
+
+        <div class="box-wrapper">
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Photo 1000001115" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="./Photos/1000001115.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I am a hopeless romantic.</p></div>
+                </div>
+            </div>
+
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Photo 1000001116" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="./Photos/pawel-czerwinski-ctMsz4XbNGU-unsplash.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I love using different textures in my art.</p></div>
+                </div>
+            </div>
+
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Photo 1000001117" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="./Photos/1000001117.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I have loved the idea of traveling to Bali since I was in 7th grade.</p></div>
+                </div>
+            </div>
+
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Photo 1000001118" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="./Photos/1000001118.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I love and used to collect masks.</p></div>
+                </div>
+            </div>
+
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Photo 1000001119" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="./Photos/1000001119.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I hope to make beautiful art that inspires others with clean coding.</p></div>
+                </div>
+            </div>
+
+            <div class="box flip-card" role="button" tabindex="0" aria-label="Flip card: Decorative landscape" style="border: 4px solid lightpink;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front"><img src="https://static.vecteezy.com/system/resources/thumbnails/025/877/453/small_2x/a-beautiful-winter-landscape-with-a-floral-in-the-calm-lake-ai-generative-free-photo.jpg" alt=""></div>
+                    <div class="flip-card-back"><p>I enjoy collecting beautiful landscapes and nature photography.</p></div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+    // Click-to-flip and keyboard support for flip-cards
+    (function(){
+        const cards = document.querySelectorAll('.flip-card');
+        cards.forEach(card => {
+            // toggle on click
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+
+            // keyboard: Enter or Space toggles flip
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.classList.toggle('flipped');
+                }
+            });
+        });
+    })();
+    </script>
+
+       
+    </div>
+    <div class="about-me" style="background-color: #0b4627; padding: 20px; margin: 20px; color: white; text-align: center;">
+    <h3>About Me:</h3>
+    
+         <p>I am passionate about art, nature, and photography. And I love being able to make websites for multiple themes. This is a simple HTML page styled with an external CSS file.</p>
+
+    </div>
+    <div class="Skills-Include" style="background-color: #0b4627; padding: 20px; margin: 20px; color: white; text-align: center;">
+    <h3>Skills Include:</h3>
+    <ul>
+        <h4>HTML</h4>
+        <h4>CSS</h4>
+        <h4>JavaScript</h4>
+        <h4>React</h4>
+        <h4>Python</h4>
+    </ul>
+    </div>
+    <div class="Projects-Contact" style="background-color: #0b4627; padding: 20px; margin: 20px; color: white; text-align: center;">
+    <h3>Projects:</h3>
+    <ul>
+        <h4>Personal Portfolio Website</h4>
+        <h4>Weather App (Coming Soon)</h4>
+        <h4>Task Manager (Coming Soon)</h4>
+        <h4>Blog Platform (Coming Soon)</h4>
+        <h4>Homestead Site (Under Construction)</h4>
+    </ul>
+    </div>
+    <div class="Projects-Contact" style="background-color: #0b4627; padding: 20px; margin: 20px; color: white; text-align: center;">
+    <h3>Contact:</h3>
+    <ul>
+        <h4>Email:tiktoktheclock@gmail.com</h4>
+        <h4>Github:stephenstarl</h4>
+        <h4>Discord: https://discord.com/channels/1437893734447714337/1437893736787873925</h4>
+    </ul>
+    </div>
+</body>
+<footer>Copyright © 2026 Stephanie</footer>
+</html>

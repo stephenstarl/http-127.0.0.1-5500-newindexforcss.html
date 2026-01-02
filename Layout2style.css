@@ -1,0 +1,84 @@
+* { box-sizing: border-box; }
+.container {
+    border: 4px solid green;
+    padding: 24px 24px 0 24px;
+}
+.row {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; }
+.title {
+    border: 7px solid lightpink;
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;       /* center text horizontally */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 0;         /* provide vertical space and center vertically */
+    box-sizing: border-box;
+}
+.box {  
+    border: 4px solid lightgray; 
+    /* fixed height for a consistent grid */
+    height: 150px;
+    width: 30%;
+    margin-bottom: 24px;
+}
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* keep top alignment for consistent grid */
+}
+
+/* Ensure inline images fill the fixed box and crop nicely */
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Flip card styles: front shows image, back shows text */
+.flip-card {
+    perspective: 1000px; /* needed for 3D effect */
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+.flip-card-front img { /* keep image filling front */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.flip-card-back {
+    background: rgba(11,70,39,0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transform: rotateY(180deg);
+}
+.flip-card-back p {
+    margin: 0;
+    padding: 0 8px;
+}
